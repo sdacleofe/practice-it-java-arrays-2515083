@@ -23,17 +23,15 @@ public class App {
     for (int i=0; i<arr.length; i++) {
       int current = arr[i];
       if (current < smallest) {
-        secondSmallest = smallest;
-        smallest = current;
+          secondSmallest = smallest;
+          smallest = current;
       } else if (current < secondSmallest && current != smallest) {
         secondSmallest = current;
       }
     }
-
-    if ( secondSmallest == Integer.MAX_VALUE) {
+    if (secondSmallest == Integer.MAX_VALUE) {
       return null;
     }
-
     return secondSmallest;
   }
     
